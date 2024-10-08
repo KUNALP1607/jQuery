@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effect 1</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .box{
+            width: 500px;
+            padding: 25px;
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit earum, maxime suscipit quidem aspernatur quisquam voluptate neque voluptatibus molestias corporis magnam nostrum fuga amet. Commodi ex perspiciatis ut officia labore nemo quos, expedita doloribus incidunt ipsam quisquam, quod magni, minus fugiat doloremque non eaque ducimus veritatis delectus placeat dolores.
+    </div>
+    <br><br>
+    <button class="hbtn">Hide</button>
+    <button class="sbtn">Show</button>
+    <button class="tbtn">Hide/Show</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".hbtn").click(function(){
+                $(".box").hide();
+            });
+            $(".sbtn").click(function(){
+                $(".box").show();
+            });
+            $(".tbtn").click(function(){
+                $(".box").toggle();
+            });
+        });
+
+    </script>
+</body>
+</html>
