@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Basics</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet.</p>
+    <script>
+        $(document).ready(function(){
+            var a = $("#para").text();
+            alert(a);
+        })
+    </script>
+</body>
+</html>
