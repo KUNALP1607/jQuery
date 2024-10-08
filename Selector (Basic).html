@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Hello jQuery</h1>
+    <button id="btn">This is button</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").css("color","blue");
+            });
+        });
+    </script>
+
+</body>
+</html>
