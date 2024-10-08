@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effect 2</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .box{
+            width: 400px;
+            padding: 25px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo maiores sapiente ducimus iure velit fugit aliquam suscipit possimus natus esse deserunt at libero ad, voluptatum obcaecati dolor, adipisci odit!
+    </div>
+
+    <br><br>
+
+    <button class="fibtn">Fade In</button>
+    <button class="fobtn">Fade Out</button>
+    <button class="ftbtn">Fade Toggle</button>
+    <button class="fttbtn">Fade To</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".fibtn").click(function(){
+                $(".box").fadeIn();
+            });
+
+            $(".fobtn").click(function(){
+                $(".box").fadeOut();
+            });
+
+            $(".ftbtn").click(function(){
+                $(".box").fadeToggle();
+            });
+        });
+    </script>
+</body>
+</html>
